@@ -292,6 +292,7 @@
     "cashier": "Cashier",
     "dba": "DBA",
     "noMatchingItems": "No matching menu items",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "logoAlt": "Logo"
   }
 }

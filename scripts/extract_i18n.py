@@ -193,6 +193,7 @@ CATALOG: dict[str, dict[str, str]] = {
     "sidebar.dba":              {"en": "DBA",              "hi": "डीबीए",                    "mr": "डीबीए"},
     "sidebar.noMatchingItems":  {"en": "No matching menu items", "hi": "कोई मेल खाने वाला मेनू आइटम नहीं", "mr": "जुळणारे मेनू आयटम नाहीत"},
     "sidebar.comingSoon":       {"en": "Coming soon",      "hi": "जल्द आ रहा है",             "mr": "लवकरच येत आहे"},
+    "sidebar.logoAlt":          {"en": "Logo",             "hi": "लोगो",                     "mr": "लोगो"},
 }
 
 # ----------------------------------------------------------------------------

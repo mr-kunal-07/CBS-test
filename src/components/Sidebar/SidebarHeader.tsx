@@ -17,7 +17,7 @@ export default function SidebarHeader({ collapsed = false, search = "", onSearch
       <div className="flex items-center justify-center gap-2">
         <img
           src="/logo.png"
-          alt="Logo"
+          alt={tRaw("sidebar.logoAlt")}
           className={collapsed ? "h-7 w-full object-contain" : "h-10 w-auto object-contain"}
         />
       </div>
