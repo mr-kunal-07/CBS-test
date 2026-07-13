@@ -68,7 +68,7 @@ export default function Sidebar({ isOpen: _isOpen, onClose: _onClose }: SidebarP
                 <NavItem key={item.id} item={item} active={pathname === item.href} collapsed={collapsed} />
               ))
             ) : (
-              <p className="px-3 py-4 text-center text-[13px] text-[#8A8FA8]">No matching menu items</p>
+              <p className="px-3 py-4 text-center text-[13px] text-[#8A8FA8]">{tRaw("sidebar.noMatchingItems")}</p>
             )
           ) : (
             menuItems.map((item) =>

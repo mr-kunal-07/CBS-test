@@ -20,7 +20,8 @@
     "noResultsFound": "કોઈ પરિણામ મળ્યું નથી",
     "view": "જુઓ",
     "edit": "સંપાદિત કરો",
-    "services": "સેવાઓ"
+    "services": "સેવાઓ",
+    "logout": "લોગઆઉટ"
   },
   "fields": {
     "accountCode": "ખાતા કોડ",
@@ -282,6 +283,15 @@
     "futureModels": "ફ્યુચર મોડેલ્સ",
     "search": "શોધો",
     "lastLogin": "છેલ્લું લોગિન:",
-    "role": "ભૂમિકા:"
+    "role": "ભૂમિકા:",
+    "hoOfficer": "એચઓ ઓફિસર",
+    "hoClerk": "એચઓ કલાર્ક",
+    "supportUtility": "સપોર્ટ યુટિલિટી",
+    "interestPosting": "વ્યાજ પોસ્ટિંગ",
+    "financialClosing": "નાણાકીય સમાપન",
+    "cashier": "કેશિયર",
+    "dba": "ડીબીએ",
+    "noMatchingItems": "કોઈ મેળ ખાતી મેનૂ આઇટમ નથી",
+    "comingSoon": "ટૂંક સમયમાં આવે છે"
   }
 }

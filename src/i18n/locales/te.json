@@ -20,7 +20,8 @@
     "noResultsFound": "ఫలితాలు కనుగొనబడలేదు",
     "view": "వీక్షించండి",
     "edit": "సవరించండి",
-    "services": "సేవలు"
+    "services": "సేవలు",
+    "logout": "లాగ్అవుట్"
   },
   "fields": {
     "accountCode": "ఖాతా కోడ్",
@@ -282,6 +283,15 @@
     "futureModels": "భవిష్యత్ మోడల్స్",
     "search": "శోధించండి",
     "lastLogin": "చివరి లాగిన్:",
-    "role": "పాత్ర:"
+    "role": "పాత్ర:",
+    "hoOfficer": "HO అధికారి",
+    "hoClerk": "HO క్లర్క్",
+    "supportUtility": "సపోర్ట్ యుటిలిటీ",
+    "interestPosting": "వడ్డీ పోస్టింగ్",
+    "financialClosing": "ఆర్థిక ముగింపు",
+    "cashier": "క్యాషియర్",
+    "dba": "DBA",
+    "noMatchingItems": "సరిపోలే మెనూ అంశాలు లేవు",
+    "comingSoon": "త్వరలో వస్తుంది"
   }
 }

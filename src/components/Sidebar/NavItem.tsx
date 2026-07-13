@@ -31,7 +31,7 @@ export default function NavItem({ item, active, collapsed = false }: NavItemProp
       type="button"
       disabled={disabled}
       onClick={handleClick}
-      title={collapsed ? label : disabled ? "Coming soon" : undefined}
+      title={collapsed ? label : disabled ? tRaw("sidebar.comingSoon") : undefined}
       className={`flex h-[42px] w-full items-center rounded-xl text-[14px] font-medium transition-all ${
         collapsed ? "justify-center px-0" : "px-3"
       } ${

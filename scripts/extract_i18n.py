@@ -60,6 +60,7 @@ CATALOG: dict[str, dict[str, str]] = {
     "common.details":         {"en": "Details",      "hi": "विवरण",          "mr": "तपशील"},
     "common.accountDetails":  {"en": "Account Details", "hi": "खाता विवरण",  "mr": "खात्याचा तपशील"},
     "common.lienDetails":     {"en": "Lien Details", "hi": "ग्रहणाधिकार विवरण", "mr": "बोजा तपशील"},
+    "common.logout":          {"en": "Logout",       "hi": "लॉगआउट",         "mr": "लॉगआउट"},
 
     # ---- shared field labels ----------------------------------------------
     "fields.accountCode":     {"en": "Account Code", "hi": "खाता कोड",       "mr": "खाते कोड"},
@@ -183,6 +184,15 @@ CATALOG: dict[str, dict[str, str]] = {
     "sidebar.lastLogin":        {"en": "Last Login:",      "hi": "अंतिम लॉगिन:",             "mr": "शेवटचे लॉगिन:"},
     "sidebar.role":             {"en": "Role:",            "hi": "भूमिका:",                  "mr": "भूमिका:"},
     "sidebar.manager":          {"en": "Manager",          "hi": "मैनेजर",                    "mr": "व्यवस्थापक"},
+    "sidebar.hoOfficer":        {"en": "Ho Officer",       "hi": "एचओ अधिकारी",              "mr": "एचओ अधिकारी"},
+    "sidebar.hoClerk":          {"en": "Ho Clerk",         "hi": "एचओ क्लर्क",               "mr": "एचओ क्लार्क"},
+    "sidebar.supportUtility":   {"en": "Support Utility",  "hi": "सपोर्ट यूटिलिटी",          "mr": "सपोर्ट युटिलिटी"},
+    "sidebar.interestPosting":  {"en": "Interest Posting", "hi": "ब्याज पोस्टिंग",           "mr": "व्याज पोस्टिंग"},
+    "sidebar.financialClosing": {"en": "Financial Closing","hi": "वित्तीय समापन",            "mr": "आर्थिक समारोप"},
+    "sidebar.cashier":          {"en": "Cashier",          "hi": "कैशियर",                   "mr": "कॅशियर"},
+    "sidebar.dba":              {"en": "DBA",              "hi": "डीबीए",                    "mr": "डीबीए"},
+    "sidebar.noMatchingItems":  {"en": "No matching menu items", "hi": "कोई मेल खाने वाला मेनू आइटम नहीं", "mr": "जुळणारे मेनू आयटम नाहीत"},
+    "sidebar.comingSoon":       {"en": "Coming soon",      "hi": "जल्द आ रहा है",             "mr": "लवकरच येत आहे"},
 }
 
 # ----------------------------------------------------------------------------

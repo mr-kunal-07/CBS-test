@@ -20,7 +20,8 @@
     "noResultsFound": "முடிவுகள் எதுவும் இல்லை",
     "view": "காண்க",
     "edit": "திருத்து",
-    "services": "சேவைகள்"
+    "services": "சேவைகள்",
+    "logout": "வெளியேறு"
   },
   "fields": {
     "accountCode": "கணக்கு குறியீடு",
@@ -282,6 +283,15 @@
     "futureModels": "எதிர்கால மாதிரிகள்",
     "search": "தேடு",
     "lastLogin": "கடைசி உள்நுழைவு:",
-    "role": "பங்கு:"
+    "role": "பங்கு:",
+    "hoOfficer": "HO அதிகாரி",
+    "hoClerk": "HO எழுத்தர்",
+    "supportUtility": "சப்போர்ட் யூட்டிலிட்டி",
+    "interestPosting": "வட்டி பதிவு",
+    "financialClosing": "நிதி முடிவு",
+    "cashier": "காசாளர்",
+    "dba": "DBA",
+    "noMatchingItems": "பொருந்தும் மெனு உருப்படிகள் இல்லை",
+    "comingSoon": "விரைவில் வருகிறது"
   }
 }

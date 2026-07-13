@@ -20,7 +20,8 @@
     "noResultsFound": "No results found",
     "view": "View",
     "edit": "Edit",
-    "services": "Services"
+    "services": "Services",
+    "logout": "Logout"
   },
   "fields": {
     "accountCode": "Account Code",
@@ -282,6 +283,15 @@
     "futureModels": "Future Models",
     "search": "Search",
     "lastLogin": "Last Login:",
-    "role": "Role:"
+    "role": "Role:",
+    "hoOfficer": "Ho Officer",
+    "hoClerk": "Ho Clerk",
+    "supportUtility": "Support Utility",
+    "interestPosting": "Interest Posting",
+    "financialClosing": "Financial Closing",
+    "cashier": "Cashier",
+    "dba": "DBA",
+    "noMatchingItems": "No matching menu items",
+    "comingSoon": "Coming soon"
   }
 }

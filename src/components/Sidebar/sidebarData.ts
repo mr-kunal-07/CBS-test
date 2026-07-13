@@ -95,9 +95,9 @@ export const menuItems: NavItemData[] = [
   // The items below don't have pages built yet. They're shown so the menu
   // matches the intended final shape, but render as non-interactive
   // placeholders (no href) until their pages exist.
-  { id: "support-utility", title: "Support Utility", icon: Wrench },
-  { id: "interest-posting", title: "Interest Posting", icon: Percent },
-  { id: "financial-closing", title: "Financial Closing", icon: Landmark },
+  { id: "support-utility", title: "Support Utility", titleKey: "sidebar.supportUtility", icon: Wrench },
+  { id: "interest-posting", title: "Interest Posting", titleKey: "sidebar.interestPosting", icon: Percent },
+  { id: "financial-closing", title: "Financial Closing", titleKey: "sidebar.financialClosing", icon: Landmark },
 
   {
     id: "manager",
@@ -130,6 +130,7 @@ export const menuItems: NavItemData[] = [
   {
     id: "clerk",
     title: "Clerk",
+    titleKey: "sidebar.clerk",
     icon: User,
     children: [
       {
@@ -198,8 +199,8 @@ export const menuItems: NavItemData[] = [
     ],
   },
 
-  { id: "cashier", title: "Cashier", icon: Wallet },
-  { id: "dba", title: "DBA", icon: Database },
+  { id: "cashier", title: "Cashier", titleKey: "sidebar.cashier", icon: Wallet },
+  { id: "dba", title: "DBA", titleKey: "sidebar.dba", icon: Database },
 ];
 
 export const user = {

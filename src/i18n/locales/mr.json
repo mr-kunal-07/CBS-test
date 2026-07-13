@@ -20,7 +20,8 @@
     "noResultsFound": "कोणतेही निकाल आढळले नाहीत",
     "view": "पहा",
     "edit": "संपादित करा",
-    "services": "सेवा"
+    "services": "सेवा",
+    "logout": "लॉगआउट"
   },
   "fields": {
     "accountCode": "खाते कोड",
@@ -282,6 +283,15 @@
     "futureModels": "फ्युचर मॉडेल्स",
     "search": "शोधा",
     "lastLogin": "शेवटचे लॉगिन:",
-    "role": "भूमिका:"
+    "role": "भूमिका:",
+    "hoOfficer": "एचओ अधिकारी",
+    "hoClerk": "एचओ क्लार्क",
+    "supportUtility": "सपोर्ट युटिलिटी",
+    "interestPosting": "व्याज पोस्टिंग",
+    "financialClosing": "आर्थिक समारोप",
+    "cashier": "कॅशियर",
+    "dba": "डीबीए",
+    "noMatchingItems": "जुळणारे मेनू आयटम नाहीत",
+    "comingSoon": "लवकरच येत आहे"
   }
 }

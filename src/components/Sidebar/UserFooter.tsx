@@ -37,7 +37,7 @@ export default function UserFooter({ user, collapsed = false }: UserFooterProps)
         <button
           type="button"
           onClick={handleLogout}
-          title="Logout"
+          title={tRaw("common.logout")}
           className="flex h-9 w-9 items-center justify-center rounded-lg text-white/70 transition hover:bg-white/10 hover:text-white"
         >
           <LogOut size={18} />
@@ -87,7 +87,7 @@ export default function UserFooter({ user, collapsed = false }: UserFooterProps)
           className="mt-2.5 flex h-8 w-full items-center justify-center gap-1.5 rounded-md border border-white/10 text-[11px] font-medium text-[#D7D9E4] transition hover:bg-white/10 hover:text-white"
         >
           <LogOut size={13} />
-          Logout
+          {tRaw("common.logout")}
         </button>
       </div>
     </div>
