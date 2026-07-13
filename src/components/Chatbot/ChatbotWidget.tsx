@@ -144,7 +144,7 @@ export default function ChatbotWidget() {
   return (
     <div ref={chatRef} className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
       {isOpen && (
-        <div className="mb-4 flex h-175 w-110 flex-col overflow-hidden rounded-2xl border border-[#ECECEC] bg-white shadow-2xl dark:border-slate-800 dark:bg-slate-900">
+        <div className="mb-4 flex h-150 w-100 flex-col overflow-hidden rounded-2xl border border-[#ECECEC] bg-white shadow-2xl dark:border-slate-800 dark:bg-slate-900">
           <div className="flex items-start justify-between gap-2 bg-gradient-to-r from-primary-600 to-primary-800 px-4 py-3 text-white">
             <div className="flex items-start gap-3">
               <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/20">
