@@ -1,0 +1,46 @@
+import { ToastContainer } from "react-toastify";
+import { Inter } from "next/font/google";
+import "react-toastify/dist/ReactToastify.css";
+import "./globals.css";
+import { ThemeProvider } from "@/components/theme/ThemeProvider";
+import { DARK_MODE_STORAGE_KEY, THEME_STORAGE_KEY } from "@/components/theme/theme-constants";
+import { LayoutModeProvider } from "@/components/layout/LayoutModeProvider";
+
+const THEME_INIT_SCRIPT = `(function(){try{
+  var c=localStorage.getItem(${JSON.stringify(THEME_STORAGE_KEY)});
+  if(c){document.documentElement.style.setProperty('--primary',c);}
+  var d=localStorage.getItem(${JSON.stringify(DARK_MODE_STORAGE_KEY)});
+  if(d==='true'){document.documentElement.classList.add('dark');}
+}catch(e){}})();`;
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+export const metadata = {
+  title: "IDSSPL",
+  description: "Core Banking Application",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className={inter.variable} suppressHydrationWarning>
+      <body className={inter.className}>
+        {/* Applies the persisted primary color before hydration to avoid a flash of the default blue */}
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+        <ThemeProvider>
+          <LayoutModeProvider>
+            {children}
+            <ToastContainer theme="dark" />
+          </LayoutModeProvider>
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
