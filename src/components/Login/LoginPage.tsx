@@ -1,7 +1,7 @@
 "use client";
 
 import { useForm } from "react-hook-form";
-import { ArrowRight, Building2, ChevronDown, Lock, User } from 'lucide-react'
+import { ArrowRight, Lock, User } from 'lucide-react'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 
@@ -9,7 +9,6 @@ import { useRouter } from 'next/navigation'
 type LoginForm = {
   userId: string;
   password: string;
-  branchCode: string;
 };
 
 const LoginPage = () => {
@@ -119,35 +118,6 @@ const LoginPage = () => {
               </div>
               {errors.password && (
                 <p className="mt-1 text-xs text-red-500 dark:text-red-400">{errors.password.message}</p>
-              )}
-            </div>
-
-            {/* Branch */}
-            <div className="mt-6">
-              <label className="text-[#2C3193] font-medium text-[15px] dark:text-indigo-300">
-                Branch Code <span className="text-gray-500 dark:text-slate-400">| शाखा कोड</span>
-                <span className="text-red-500 dark:text-red-400">*</span>
-              </label>
-
-              <div className={`mt-1 flex items-center border rounded-md h-10 px-4 bg-white dark:bg-slate-900 ${errors.branchCode ? "border-red-500 dark:border-red-500" : "border-[#5B63C6] dark:border-slate-700"}`}>
-                <Building2 size={18} className="text-[#5B63C6] dark:text-slate-400" />
-
-                <select
-                  {...register("branchCode", {
-                    required: "Branch code is required",
-                  })}
-                  className="ml-3 flex-1 outline-none bg-transparent text-sm appearance-none text-gray-500 dark:text-slate-300"
-                >
-                  <option value="">Select Branch Code</option>
-                  <option>001</option>
-                  <option>002</option>
-                  <option>003</option>
-                </select>
-
-                <ChevronDown className="text-[#2C3193] dark:text-indigo-300" size={20} />
-              </div>
-              {errors.branchCode && (
-                <p className="mt-1 text-xs text-red-500 dark:text-red-400">{errors.branchCode.message}</p>
               )}
             </div>
 

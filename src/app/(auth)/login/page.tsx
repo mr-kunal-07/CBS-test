@@ -1,80 +1,17 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { User, Lock, Building2, ArrowRight, Eye, EyeOff, ChevronDown } from "lucide-react";
+import { useState } from "react";
+import { User, Lock, ArrowRight, Eye, EyeOff } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { STATIC_LOGIN_ID, STATIC_PASSWORD } from "@/lib/auth";
 import OtpMethodModal, { type OtpMethodId } from "@/components/auth/OtpMethodModal";
-
-const branchOptions = [
-  { value: "001", label: "001 - Main Branch" },
-  { value: "002", label: "002 - Mumbai Branch" },
-  { value: "003", label: "003 - Pune Branch" },
-];
-
-const BranchDropdown = ({
-  value,
-  onChange,
-}: {
-  value: string;
-  onChange: (val: string) => void;
-}) => {
-  const [open, setOpen] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      if (ref.current && !ref.current.contains(e.target as Node)) {
-        setOpen(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
-  const selected = branchOptions.find((b) => b.value === value);
-
-  return (
-    <div className="relative w-full" ref={ref}>
-      <button
-        type="button"
-        onClick={() => setOpen(!open)}
-        className="w-full flex items-center gap-2 justify-between text-sm text-[#475569] bg-transparent outline-none dark:text-slate-300"
-      >
-        <span className="flex items-center gap-2">
-          <Building2 size={18} className="text-[#475569] dark:text-slate-400" />
-          {selected ? selected.label : "Select Branch Code"}
-        </span>
-        <ChevronDown size={16} />
-      </button>
-
-      {open && (
-        <div className="absolute z-10 mt-1 w-[180px] bg-white border border-[#696FC7] rounded-lg shadow-md overflow-hidden dark:bg-slate-900 dark:border-slate-700">
-          {branchOptions.map((opt) => (
-            <div
-              key={opt.value}
-              onClick={() => {
-                onChange(opt.value);
-                setOpen(false);
-              }}
-              className="px-3 py-2 text-sm text-[#475569] hover:bg-[#EEF8FF] cursor-pointer dark:text-slate-300 dark:hover:bg-slate-800"
-            >
-              {opt.label}
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-};
 
 const LoginPage = () => {
   const router = useRouter();
 
   const [userId, setUserId] = useState("");
   const [password, setPassword] = useState("");
-  const [branchCode, setBranchCode] = useState("");
   const [userIdError, setUserIdError] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -236,22 +173,12 @@ const LoginPage = () => {
                 )}
               </div>
 
-              {/* Branch Code */}
-              <div>
-                <label className="text-[15px] font-medium text-[#312E81] dark:text-indigo-300">
-                  Branch Code | <span className="text-[#808080] dark:text-slate-500">शाखा कोड</span>
-                </label>
-                <div className="mt-1 flex items-center rounded-lg border border-[#696FC7] bg-white px-3 h-[50px] focus-within:border-[#3730A3] shadow-sm dark:border-slate-700 dark:bg-slate-900 dark:focus-within:border-indigo-400">
-                  <BranchDropdown value={branchCode} onChange={setBranchCode} />
-                </div>
-              </div>
-
               {/* Submit */}
               <button
                 type="button"
                 disabled={!isFormValid}
                 onClick={handleSubmit}
-                className="mt-4 h-[54px] w-full rounded-xl bg-primary text-white font-medium text-lg flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#0b7384] transition"
+                className="mt-4 h-[54px] w-full rounded-xl bg-primary text-white font-medium text-lg flex items-center justify-center gap-2 cursor-pointer hover:bg-[#0b7384] transition"
               >
                 Proceed to OTP Verification
                 <ArrowRight size={18} />
